@@ -7,7 +7,7 @@ public class Logins {
 
     @SerializedName("phone")
     @Expose
-    private String phone;
+    private Long phone;
 
     @SerializedName("country_code")
     @Expose
@@ -17,17 +17,17 @@ public class Logins {
     @Expose
     private String imei;
 
-    public Logins(String phone, String country_code, String imei) {
+    public Logins(Long phone, String country_code, String imei) {
         this.phone = phone;
         this.country_code = country_code;
         this.imei = imei;
     }
 
-    public String getPhone() {
+    public Long getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(Long phone) {
         this.phone = phone;
     }
 
